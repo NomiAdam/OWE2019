@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const AppName = ({ name }) => {
     return (
@@ -6,6 +7,10 @@ const AppName = ({ name }) => {
             <span>{ name }</span>
         </div>
     )
+};
+
+AppName.propTypes = {
+    name: PropTypes.string,
 };
 
 export default AppName;

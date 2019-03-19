@@ -50,6 +50,10 @@ code {
   height: 100%;
 }
 
+.TextCenter {
+  text-align: center;
+}
+
 .Button {
   border: 1px solid pink;
   padding: 10px;
@@ -83,13 +87,15 @@ code {
   margin: 0;
 }
 
-.Input-Label {
-  padding: 8px 0;
+.InputLabel {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .Input {
   border: 1px solid pink;
   padding: 8px;
+  margin: 0 8px;
 }
 
 .FlexCenter {

@@ -12,7 +12,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path={'/'} component={LandingPage}/>
                         <Route path={'/patient'} component={Patient}/>
-                        <Route path={'/result'} component={Result}/>
+                        <Route path={'/result/:choice'} component={Result}/>
                     </Switch>
                 </BrowserRouter>
             </div>

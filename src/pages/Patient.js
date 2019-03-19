@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import {patientsUrl} from '../constants';
 import {PersonalData, Symptoms, Medicaments} from '../components/PacientInformation';
-import { Link } from 'react-router-dom'
+import DecisionBar from '../components/DecisionBar';
 
 class Patient extends React.Component {
     state = {
@@ -35,11 +35,7 @@ class Patient extends React.Component {
                         <Medicaments medicaments={medicaments}/>}
                     />
                 </div>
-                <div>
-                    <div className={'FlexSpacer Padding10'}>
-                <Link to={'/'} className={'Button'} >Button</Link>
-                    </div>
-                </div>
+                <DecisionBar />
             </div>
         );
     }
